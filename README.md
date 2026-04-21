@@ -1,18 +1,51 @@
-i want you to understand this project(warning : this is a simple project, if you are expecting a big with this,it's not)
-so first we will understand the pseudo code:
-// we need three libraries for this project including <stdio.h>
-//if you dont know what (.h) mean let me tell you its shorthand or extension for header file.
-// header file allow users of c or c++ use some pre written code and dont re invent the wheel.
-#first import three libraries(<stdio.h>,<stdlib.h>,<time.h>)
-#main
-#first lets declare a variable named n or something else which is not undescriptive like "n",(int n;).
-#then genrate random a random number and assign it to n.
-#declare a tracker variable such as count.(int)
-#infinite loop(you can limit that as per your choice for making game challnging and thats good)
-#we can declare that like this while(1){code};
-# under the loop we decalre a variable or we declare outside it doesnt matter but we have assign a value everytime in loop
-#let it be pass from if else if .
-you break loop using(break; ) if number is equal to number inputed from user.
+🎯 Number Guessing Game (C Language)
 
-// this is simple how you can make your first c classical project.
--> stay tuned for upcoming amazing projects in languages like python, c, c++ and related to web dev, game dev and embedded systems.
+A simple command-line number guessing game written in C. This is my first GitHub project 🚀 and it helped me practice core programming concepts like loops, conditionals, and user input.
+
+📌 Features
+Random number generation
+User input handling
+Hints (Too high / Too low)
+Counts number of attempts
+Simple and interactive CLI gameplay
+🛠️ Built With
+C Programming Language
+Standard Libraries:
+stdio.h
+stdlib.h
+time.h
+🎮 How to Play
+The program generates a random number.
+You try to guess the number.
+The game will tell you:
+📉 "Too low" if your guess is smaller
+📈 "Too high" if your guess is larger
+Keep guessing until you find the correct number.
+The game shows how many attempts you took.
+▶️ How to Run
+Step 1: Compile the code
+gcc game.c -o game
+Step 2: Run the program
+./game
+
+(On Windows, use game.exe instead of ./game)
+
+📂 Project Structure
+📁 number-guessing-game
+ ├── game.c
+ └── README.md
+📚 What I Learned
+Basics of C programming
+Using rand() for random numbers
+Looping with while
+Conditional statements (if-else)
+Taking user input with scanf
+🚀 Future Improvements
+Difficulty levels (Easy/Medium/Hard)
+Limited number of attempts
+Score system
+Replay option
+Better UI (maybe with colors)
+🙌 Acknowledgment
+
+Inspired by beginner programming exercises and learning resources.
