@@ -1,30 +1,33 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+#include <stdio.h>   // for input/output functions like printf, scanf
+#include <stdlib.h>  // for rand() and srand()
+#include <time.h>    // for time() to generate random seed
 
 int main() {
-    int min = 10, max = 50;
-    srand(time(NULL));
+    int min = 10, max = 100;  // range of random number
+
+    srand(time(NULL));  // seed the random number generator
+
+    // generate random number between min and max
     int randomNum = (rand() % (max - min + 1)) + min;
-    printf("Random Number: %d\n", randomNum);
 
-    for(int i = 1;i > 0;i++)
-    {
+    // infinite loop until correct guess
+    for (int i = 1; i > 0; i++) {
         int input;
-        printf("enter your guess under 1 to 100\n: ");
-        scanf("%d",&input);
 
-        if(input == randomNum){
-            printf("you guessed right in %d tries.\n",i);
-            break;
+        printf("Enter your guess (1 to 100): ");
+        scanf("%d", &input);
+
+        if (input == randomNum) {
+            printf("You guessed right in %d tries.\n", i);
+            break;  // exit loop when correct
         }
-        else if(input>randomNum) {
+        else if (input > randomNum) {
             printf("Too high!\n");
         }
-        else if(input<randomNum){
+        else {
             printf("Too low!\n");
         }
     }
-    return 0;
-}
 
+    return 0;  // program ends successfully
+}
